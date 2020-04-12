@@ -14,8 +14,7 @@ inputs:
 
 runs:
     using: 'docker'
-    image: 'docker://mrnonz/alpine-git-curl:alpine3.11'
-    entrypoint: './scripts/create-new-tag.sh'
+    image: 'Dockerfile'
     args:
         - ${{ inputs.owner }}
         - ${{ inputs.github_token }}
